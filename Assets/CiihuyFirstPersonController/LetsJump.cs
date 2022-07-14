@@ -10,7 +10,7 @@ public class LetsJump : MonoBehaviour
 
 	private bool canjump;
 	private bool isjumping;
-  private Rigidbody rb;
+  	private Rigidbody rb;
 	private float countDown;
 	public GameObject myCharacter;
 	Animator  charAnimator;
