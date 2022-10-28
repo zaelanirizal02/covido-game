@@ -32,6 +32,7 @@ public class MunculinNPC : MonoBehaviour
         yield return new WaitForSeconds(jeda);
         StartCoroutine(MunculNPC());
     }
+    
 
     // void RandomizeMyRotation()
     // {
@@ -57,3 +58,4 @@ public class MunculinNPC : MonoBehaviour
     //     }
     // }
 }
+
