@@ -1790,6 +1790,7 @@ MonoBehaviour:
   speed: 6
   joystick: {fileID: 3827421946092358384}
   myCharacter: {fileID: 4169438436467163763}
+  playerPutaran: {fileID: 0}
 --- !u!54 &8978857751264655126
 Rigidbody:
   m_ObjectHideFlags: 0

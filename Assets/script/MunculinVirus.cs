@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +7,7 @@ public class MunculinVirus : MonoBehaviour
 {
     // [SerializeField] Transform[] Positions;
     // [SerializeField] float ObjectSpeed;
+    
 
     //int NextPosIndex;
     // Transform NextPos;
@@ -29,7 +30,7 @@ public class MunculinVirus : MonoBehaviour
     IEnumerator MunculVirus()
     {  
         Instantiate(virus, transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(4);
         StartCoroutine(MunculVirus());
     }
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MunculinNPC : MonoBehaviour
 
 {
-    public GameObject npc;
+    [SerializeField] GameObject[] npc;
     // public int yPos;
     [SerializeField] float jeda;
   
@@ -28,10 +28,22 @@ public class MunculinNPC : MonoBehaviour
     {   
         // yPos = Random.Range(-90, 90);
         // Instantiate(npc, new Vector3(22, yPos, 21), Quaternion.identity);
-        Instantiate(npc, transform.position,  Quaternion.identity);
+        GameObject gameObject = Instantiate(npc[Random.Range(0, npc.Length)], transform.position,  Quaternion.identity);
         yield return new WaitForSeconds(jeda);
         StartCoroutine(MunculNPC());
     }
+
+    // void OnTriggerEnter(Collider other)
+    // {
+    //     StartCoroutine (MunculNPC());
+    // }
+
+    // IEnumerator RespawnNpc()
+    // {
+    //     Destroy (npc.gameObject);
+    //     npc = (GameObject)Instantiate (npc, transform.position, Quaternion.identity);
+    //     yield return null;
+    // }
     
 
     // void RandomizeMyRotation()
