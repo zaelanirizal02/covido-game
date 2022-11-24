@@ -19,17 +19,17 @@ public class infeksi : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
        
-         if (collision.collider.CompareTag("virus"))
-        {
-            Destroy(collision.gameObject);
-        }
-         if (collision.collider.CompareTag("boss"))
-        {
-            Destroy(collision.gameObject);
-        }
+        //  if (collision.collider.CompareTag("virus"))
+        // {
+        //     Destroy(collision.gameObject);
+        // }
          if (collision.collider.CompareTag("pelanggar"))
         {
             Destroy(collision.gameObject);
+        }
+         if (collision.collider.CompareTag("checkpoint"))
+        {
+            // Destroy(collision.gameObject);
         }
     }
 

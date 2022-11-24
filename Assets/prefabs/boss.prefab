@@ -710,8 +710,6 @@ GameObject:
   - component: {fileID: -8926153995594270147}
   - component: {fileID: -4160862187701659408}
   - component: {fileID: 8928878307702631152}
-  - component: {fileID: 4862721147434222302}
-  - component: {fileID: -4644876031659642960}
   m_Layer: 0
   m_Name: boss
   m_TagString: pelanggar
@@ -794,32 +792,6 @@ CapsuleCollider:
   m_Height: 0.69916725
   m_Direction: 1
   m_Center: {x: 0.15041637, y: 1.142277, z: 0}
---- !u!114 &4862721147434222302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915343844427752995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9708dd1a65fe7344b73258d8f1c6cb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-4644876031659642960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915343844427752995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69dbb7684f42d4b4fa91a211fb593358, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreUI: {fileID: 5643239498933107037, guid: 0de5eba25c1647345964e6e778811198, type: 3}
 --- !u!1 &955684203244795515
 GameObject:
   m_ObjectHideFlags: 0

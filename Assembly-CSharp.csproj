@@ -100,6 +100,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\script\Checkpoint.cs" />
      <Compile Include="Assets\script\GerakanNPC.cs" />
      <Compile Include="Assets\script\GerakanPlayer.cs" />
      <Compile Include="Assets\script\GerakanPlayer2.cs" />
@@ -107,8 +108,10 @@
      <Compile Include="Assets\script\MunculinNPC.cs" />
      <Compile Include="Assets\script\MunculinVirus.cs" />
      <Compile Include="Assets\script\ScoreScript.cs" />
+     <Compile Include="Assets\script\TimeSet.cs" />
      <Compile Include="Assets\script\infeksi.cs" />
      <Compile Include="Assets\script\infeksi2.cs" />
+     <Compile Include="Assets\script\infeksiNPC.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

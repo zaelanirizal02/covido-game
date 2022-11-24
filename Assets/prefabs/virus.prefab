@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1461326356302745786}
   - component: {fileID: 5638834985869602864}
   - component: {fileID: 7536441883148631174}
-  - component: {fileID: 6573090417003204278}
+  - component: {fileID: 8404183369112087413}
   m_Layer: 0
   m_Name: virus
   m_TagString: virus
@@ -94,7 +94,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.8590683
+  m_Radius: 1.3457698
   m_Center: {x: 0.000000059604645, y: -0.00000017881393, z: 0}
 --- !u!54 &5638834985869602864
 Rigidbody:
@@ -143,8 +143,8 @@ MonoBehaviour:
   - {fileID: 1488947612144208685, guid: f68e51b3fc451d146a81cd687a1254cf, type: 3}
   - {fileID: 7711666740157976951, guid: dad949fe283b03a45adffb39095e3fa2, type: 3}
   - {fileID: 4782278541198702378, guid: 6b2179018c4f35845b97b0fc241190ec, type: 3}
-  ObjectSpeed: 3
---- !u!114 &6573090417003204278
+  ObjectSpeed: 5
+--- !u!114 &8404183369112087413
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
