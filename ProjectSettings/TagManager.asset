@@ -9,6 +9,8 @@ TagManager:
   - hapus
   - boss
   - pelanggar
+  - Canvas
+  - checkpoint
   layers:
   - Default
   - TransparentFX

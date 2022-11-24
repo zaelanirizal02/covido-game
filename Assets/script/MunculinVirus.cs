@@ -30,7 +30,7 @@ public class MunculinVirus : MonoBehaviour
     IEnumerator MunculVirus()
     {  
         Instantiate(virus, transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2);
         StartCoroutine(MunculVirus());
     }
 
