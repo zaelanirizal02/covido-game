@@ -33,7 +33,8 @@ public class Checkpoint : MonoBehaviour
 
             if(score>2)
             {
-                SceneManager.LoadScene("2");
+                // SceneManager.LoadScene("2");
+                Time.timeScale = 0;
             }
         }
     }

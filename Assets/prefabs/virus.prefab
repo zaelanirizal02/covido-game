@@ -143,7 +143,7 @@ MonoBehaviour:
   - {fileID: 1488947612144208685, guid: f68e51b3fc451d146a81cd687a1254cf, type: 3}
   - {fileID: 7711666740157976951, guid: dad949fe283b03a45adffb39095e3fa2, type: 3}
   - {fileID: 4782278541198702378, guid: 6b2179018c4f35845b97b0fc241190ec, type: 3}
-  ObjectSpeed: 5
+  ObjectSpeed: 20
 --- !u!114 &8404183369112087413
 MonoBehaviour:
   m_ObjectHideFlags: 0

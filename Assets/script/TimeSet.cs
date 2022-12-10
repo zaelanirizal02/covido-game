@@ -5,10 +5,15 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TimeSet : MonoBehaviour
-{
+{   
+  //timer
     public Text TextTimer;
     public float Waktu;
     public bool GameAktif = true;
+
+    //skor
+    public float score;
+    public Text ScoreUI;
   
   void SetText()
   {
@@ -34,13 +39,40 @@ public class TimeSet : MonoBehaviour
         }
     }
 
-    if (GameAktif && Waktu <= 0)
+    if (GameAktif && Waktu <= 0 && score >2)
     {
         // Debug.Log("Game Kalah");
         GameAktif = false;
+        SceneManager.LoadScene("main");
+        
     }
+
+     if (GameAktif && Waktu <= 0 && score <2)
+    {
+        // Debug.Log("Game Kalah");
+        GameAktif = false;
+        // Time.timeScale = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+  
 
     // SceneManager = FindObjectOfType<Checkpoint>();
     // SceneManager.LoadScene();  
   }
+
+  private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("virus"))
+        {
+            score ++;
+            ScoreUI.text = "Score : " + score.ToString();
+            Destroy(collision.collider.gameObject);
+
+            // if(score>2)
+            // {
+            //     // SceneManager.LoadScene("2");
+            //     Time.timeScale = 0;
+            // }
+        }
+    }
 }
