@@ -20,7 +20,6 @@ public class TimeSet : MonoBehaviour
     int Menit = Mathf.FloorToInt(Waktu / 60);
     int Detik = Mathf.FloorToInt(Waktu % 60);
     TextTimer.text = Menit.ToString("00") + ":" + Detik.ToString("00");
-
   }
 
   float s;
@@ -39,15 +38,22 @@ public class TimeSet : MonoBehaviour
         }
     }
 
-    if (GameAktif && Waktu <= 0 && score >2)
+    // if (GameAktif = true && score >=2)
     {
         // Debug.Log("Game Kalah");
-        GameAktif = false;
-        SceneManager.LoadScene("main");
+        // GameAktif = false;
+        // SceneManager.LoadScene("main");
         
     }
 
-     if (GameAktif && Waktu <= 0 && score <2)
+     if (GameAktif && Waktu <= 0 )
+    {
+        // Debug.Log("Game Kalah");
+        GameAktif = false;
+        // Time.timeScale = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+       if (GameAktif && score >= 20 )
     {
         // Debug.Log("Game Kalah");
         GameAktif = false;
@@ -74,5 +80,10 @@ public class TimeSet : MonoBehaviour
             //     Time.timeScale = 0;
             // }
         }
+
+        // if(score>2)
+        // {
+        //     GameAktif = false;
+        // }
     }
 }
