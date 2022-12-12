@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Checkpoint
+    - DestroyNpc
+    - DestroyNpc1
     - GerakanVirus
     - MunculinNPC
     - MunculinVirus
@@ -11,6 +13,8 @@ ScriptsOnlyBuild:
     - ScoreScript
     - TimeSet
     - infeksi
+    - mainmenu
+    - pausemenu
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TerrainTools.Editor.dll:
@@ -30,6 +34,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -48,6 +53,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/2.unity:
@@ -68,8 +76,6 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
@@ -104,43 +110,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 12062}
+      Script: {instanceID: 11990}
     - Class: 114
-      Script: {instanceID: 12092}
+      Script: {instanceID: 12064}
     - Class: 114
-      Script: {instanceID: 12096}
+      Script: {instanceID: 12094}
     - Class: 114
-      Script: {instanceID: 12106}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12288}
+      Script: {instanceID: 12290}
     - Class: 114
-      Script: {instanceID: 12388}
+      Script: {instanceID: 12390}
     - Class: 114
-      Script: {instanceID: 12502}
+      Script: {instanceID: 12504}
     - Class: 114
-      Script: {instanceID: 12804}
+      Script: {instanceID: 12760}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 13132}
+      Script: {instanceID: 13064}
     - Class: 114
-      Script: {instanceID: 13254}
+      Script: {instanceID: 13136}
     - Class: 114
-      Script: {instanceID: 13326}
+      Script: {instanceID: 13196}
     - Class: 114
-      Script: {instanceID: 13424}
+      Script: {instanceID: 13262}
     - Class: 114
-      Script: {instanceID: 13448}
+      Script: {instanceID: 13432}
     - Class: 114
-      Script: {instanceID: 13496}
+      Script: {instanceID: 13504}
     - Class: 114
-      Script: {instanceID: 13528}
+      Script: {instanceID: 13536}
     - Class: 114
-      Script: {instanceID: 13582}
+      Script: {instanceID: 13590}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 13664}
     - Class: 114
-      Script: {instanceID: 14354}
+      Script: {instanceID: 18850}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -170,6 +176,75 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/Menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11352}
+    - Class: 114
+      Script: {instanceID: 11380}
+    - Class: 114
+      Script: {instanceID: 11576}
+    - Class: 114
+      Script: {instanceID: 11634}
+    - Class: 114
+      Script: {instanceID: 11952}
+    - Class: 114
+      Script: {instanceID: 12064}
+    - Class: 114
+      Script: {instanceID: 12098}
+    - Class: 114
+      Script: {instanceID: 12304}
+    - Class: 114
+      Script: {instanceID: 12808}
+    - Class: 114
+      Script: {instanceID: 12826}
+    - Class: 114
+      Script: {instanceID: 13064}
+    - Class: 114
+      Script: {instanceID: 13136}
+    - Class: 114
+      Script: {instanceID: 13142}
+    - Class: 114
+      Script: {instanceID: 13334}
+    - Class: 114
+      Script: {instanceID: 13456}
+    - Class: 114
+      Script: {instanceID: 13590}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -282,7 +357,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 4611d9c26bcbc82dc6fd1f506598d902
+      Hash: a92a31d2dfd228a7b7607dc930c14d3a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TimeSet
@@ -382,6 +457,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DestroyNpc1
   - hash:
       serializedVersion: 2
       Hash: 54e21c755bc66db70c9fcf8dbab0a84e
@@ -576,6 +657,12 @@ ScriptsOnlyBuild:
     className: ObjectSpin
   - hash:
       serializedVersion: 2
+      Hash: cc63cb21d2e9d1a7b27956fdb7e40d3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: pausemenu
+  - hash:
+      serializedVersion: 2
       Hash: f64fd37da5cb89243ec68b5026d70bb8
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -720,6 +807,12 @@ ScriptsOnlyBuild:
     className: GerakanPlayer
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: mainmenu
+  - hash:
+      serializedVersion: 2
       Hash: 8a874a8207a7664bdf44e61f28717254
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -742,6 +835,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TextMeshSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DestroyNpc
   - hash:
       serializedVersion: 2
       Hash: e63944317d2f5958e31963668bb29158
@@ -954,5 +1053,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
+  - Assets/Scenes/Menu.unity
   - Assets/Scenes/2.unity
-  playerPath: E:/codd/covido-game/gamebuild/apk2/klkl.apk
+  playerPath: E:/codd/covido-game/gamebuild/v2/c2.apk

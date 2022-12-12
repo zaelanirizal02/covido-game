@@ -1,0 +1,11 @@
+com/unity3d/player/R.java
+ com.unity3d.player.R
+ com.unity3d.player.R$style
+com/DefaultCompany/covido/R.java
+ com.DefaultCompany.covido.R
+ com.DefaultCompany.covido.R$id
+ com.DefaultCompany.covido.R$mipmap
+ com.DefaultCompany.covido.R$string
+ com.DefaultCompany.covido.R$style
+com/DefaultCompany/covido/BuildConfig.java
+ com.DefaultCompany.covido.BuildConfig

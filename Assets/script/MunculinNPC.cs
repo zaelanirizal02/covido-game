@@ -31,6 +31,7 @@ public class MunculinNPC : MonoBehaviour
         GameObject gameObject = Instantiate(npc[Random.Range(0, npc.Length)], transform.position,  Quaternion.identity);
         yield return new WaitForSeconds(jeda);
         StartCoroutine(MunculNPC());
+       Destroy(gameObject);
     }
 
     // void OnTriggerEnter(Collider other)

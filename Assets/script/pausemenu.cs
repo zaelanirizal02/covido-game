@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class pausemenu : MonoBehaviour
+public class pauseMenu : MonoBehaviour
 {
 	public GameObject panelPause;
 	public void PauseControl()
@@ -19,7 +19,7 @@ public class pausemenu : MonoBehaviour
 		}
 	}
 
-	public void Menu()
+	public void Restart()
 	{
 		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 		Time.timeScale = 1;
