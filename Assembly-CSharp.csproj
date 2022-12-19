@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D059E511-6B71-F07A-89AA-8CFF0C709521}</ProjectGuid>
+    <ProjectGuid>{6E86E02D-7048-617D-A4D4-F54A364E36BA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,28 @@
      <Compile Include="Assets\CiihuyFirstPersonController\MyRotationTouchpad.cs" />
      <Compile Include="Assets\CiihuyFirstPersonController\PlayerMovement.cs" />
      <Compile Include="Assets\CiihuyFirstPersonController\demoscript.cs" />
+     <Compile Include="Assets\LV1\script\Checkpoint.cs" />
+     <Compile Include="Assets\LV1\script\DestroyNpc.cs" />
+     <Compile Include="Assets\LV1\script\DestroyNpc1.cs" />
+     <Compile Include="Assets\LV1\script\DestroyNpc2.cs" />
+     <Compile Include="Assets\LV1\script\GerakanNPC.cs" />
+     <Compile Include="Assets\LV1\script\GerakanPlayer.cs" />
+     <Compile Include="Assets\LV1\script\GerakanPlayer2.cs" />
+     <Compile Include="Assets\LV1\script\GerakanVirus.cs" />
+     <Compile Include="Assets\LV1\script\MunculinNPC.cs" />
+     <Compile Include="Assets\LV1\script\MunculinVirus.cs" />
+     <Compile Include="Assets\LV1\script\RespawnNPC.cs" />
+     <Compile Include="Assets\LV1\script\ScoreScript.cs" />
+     <Compile Include="Assets\LV1\script\Teleport1.cs" />
+     <Compile Include="Assets\LV1\script\TimeSet.cs" />
+     <Compile Include="Assets\LV1\script\infeksi.cs" />
+     <Compile Include="Assets\LV1\script\infeksi2.cs" />
+     <Compile Include="Assets\LV1\script\infeksiNPC.cs" />
+     <Compile Include="Assets\LV1\script\mainmenu.cs" />
+     <Compile Include="Assets\LV1\script\pauseMenu.cs" />
+     <Compile Include="Assets\LV1\script\replace.cs" />
+     <Compile Include="Assets\LV1\script\skipnpc.cs" />
+     <Compile Include="Assets\LV3\TimeSet3.cs" />
      <Compile Include="Assets\NPC\showUI.cs" />
      <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\DemoFree.cs" />
      <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\FreeCameraLogic.cs" />
@@ -99,23 +121,8 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-     <Compile Include="Assets\script\Checkpoint.cs" />
-     <Compile Include="Assets\script\DestroyNpc.cs" />
-     <Compile Include="Assets\script\DestroyNpc1.cs" />
-     <Compile Include="Assets\script\GerakanNPC.cs" />
-     <Compile Include="Assets\script\GerakanPlayer.cs" />
-     <Compile Include="Assets\script\GerakanPlayer2.cs" />
-     <Compile Include="Assets\script\GerakanVirus.cs" />
-     <Compile Include="Assets\script\MunculinNPC.cs" />
-     <Compile Include="Assets\script\MunculinVirus.cs" />
-     <Compile Include="Assets\script\RespawnNPC.cs" />
-     <Compile Include="Assets\script\ScoreScript.cs" />
-     <Compile Include="Assets\script\TimeSet.cs" />
-     <Compile Include="Assets\script\infeksi.cs" />
-     <Compile Include="Assets\script\infeksi2.cs" />
-     <Compile Include="Assets\script\infeksiNPC.cs" />
-     <Compile Include="Assets\script\mainmenu.cs" />
-     <Compile Include="Assets\script\pausemenu.cs" />
+     <Compile Include="Assets\mainmenu.cs" />
+     <Compile Include="Assets\pausemenu.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -668,37 +675,40 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.20f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TerrainTools">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VisualStudio.Editor">
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TerrainTools.Editor">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>E:/codd/covido-game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>E:/codd/C++/covido-test/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

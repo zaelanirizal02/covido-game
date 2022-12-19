@@ -11,6 +11,10 @@ TagManager:
   - pelanggar
   - Canvas
   - checkpoint
+  - kate
+  - bossX
+  - remyX
+  - kateX
   layers:
   - Default
   - TransparentFX

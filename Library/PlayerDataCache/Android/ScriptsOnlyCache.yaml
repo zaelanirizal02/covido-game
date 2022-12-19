@@ -13,8 +13,10 @@ ScriptsOnlyBuild:
     - ScoreScript
     - TimeSet
     - infeksi
+    - infeksi2
     - mainmenu
-    - pausemenu
+    - pauseMenu
+    - replace
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TerrainTools.Editor.dll:
@@ -58,7 +60,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/2.unity:
+    Assets/Scenes/4.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -100,53 +102,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11352}
-    - Class: 114
       Script: {instanceID: 11354}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11356}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11384}
     - Class: 114
-      Script: {instanceID: 11634}
+      Script: {instanceID: 11644}
     - Class: 114
-      Script: {instanceID: 11990}
+      Script: {instanceID: 11650}
     - Class: 114
-      Script: {instanceID: 12064}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 12094}
+      Script: {instanceID: 12032}
     - Class: 114
       Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12290}
+      Script: {instanceID: 12146}
     - Class: 114
-      Script: {instanceID: 12390}
+      Script: {instanceID: 12160}
     - Class: 114
-      Script: {instanceID: 12504}
+      Script: {instanceID: 12368}
     - Class: 114
-      Script: {instanceID: 12760}
+      Script: {instanceID: 12430}
     - Class: 114
-      Script: {instanceID: 12808}
+      Script: {instanceID: 12480}
     - Class: 114
-      Script: {instanceID: 13064}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 13136}
+      Script: {instanceID: 12892}
     - Class: 114
-      Script: {instanceID: 13196}
+      Script: {instanceID: 12942}
     - Class: 114
-      Script: {instanceID: 13262}
+      Script: {instanceID: 13202}
     - Class: 114
-      Script: {instanceID: 13432}
+      Script: {instanceID: 13280}
     - Class: 114
-      Script: {instanceID: 13504}
+      Script: {instanceID: 13354}
     - Class: 114
-      Script: {instanceID: 13536}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 13590}
+      Script: {instanceID: 13606}
     - Class: 114
-      Script: {instanceID: 13664}
+      Script: {instanceID: 13682}
     - Class: 114
-      Script: {instanceID: 18850}
+      Script: {instanceID: 13718}
+    - Class: 114
+      Script: {instanceID: 13774}
+    - Class: 114
+      Script: {instanceID: 13862}
+    - Class: 114
+      Script: {instanceID: 14926}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -199,37 +205,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11352}
+      Script: {instanceID: 11356}
     - Class: 114
-      Script: {instanceID: 11380}
+      Script: {instanceID: 11384}
     - Class: 114
-      Script: {instanceID: 11576}
+      Script: {instanceID: 11600}
     - Class: 114
-      Script: {instanceID: 11634}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 11952}
+      Script: {instanceID: 11992}
     - Class: 114
-      Script: {instanceID: 12064}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12098}
+      Script: {instanceID: 12150}
     - Class: 114
-      Script: {instanceID: 12304}
+      Script: {instanceID: 12382}
     - Class: 114
-      Script: {instanceID: 12808}
+      Script: {instanceID: 12942}
     - Class: 114
-      Script: {instanceID: 12826}
+      Script: {instanceID: 12960}
     - Class: 114
-      Script: {instanceID: 13064}
+      Script: {instanceID: 13202}
     - Class: 114
-      Script: {instanceID: 13136}
+      Script: {instanceID: 13280}
     - Class: 114
-      Script: {instanceID: 13142}
+      Script: {instanceID: 13286}
     - Class: 114
-      Script: {instanceID: 13334}
+      Script: {instanceID: 13504}
     - Class: 114
-      Script: {instanceID: 13456}
+      Script: {instanceID: 13632}
     - Class: 114
-      Script: {instanceID: 13590}
+      Script: {instanceID: 13774}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -249,16 +255,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 5f1752ed2092162f016c19510c28a8b9
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: aeb62f729c52c814dec86c47dcac1471
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -301,6 +307,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: cc63cb21d2e9d1a7b27956fdb7e40d3d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: pausemenu
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -447,6 +459,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: mainmenu
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -475,12 +493,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: WarpTextExample
-  - hash:
-      serializedVersion: 2
-      Hash: 5f170942ee57c7a568f5bcfc7521adea
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools
-    className: EnumerableTestState
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -519,7 +531,7 @@ ScriptsOnlyBuild:
     className: TMP_TextEventHandler
   - hash:
       serializedVersion: 2
-      Hash: fdc517a6973cd95dcbce7a8e4ada124a
+      Hash: c8f4923441b3d0bc131911a530d1ba1c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MunculinVirus
@@ -565,6 +577,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: replace
   - hash:
       serializedVersion: 2
       Hash: 3375c3d749f8f4cad889721b431bdc27
@@ -660,7 +678,7 @@ ScriptsOnlyBuild:
       Hash: cc63cb21d2e9d1a7b27956fdb7e40d3d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: pausemenu
+    className: pauseMenu
   - hash:
       serializedVersion: 2
       Hash: f64fd37da5cb89243ec68b5026d70bb8
@@ -687,7 +705,7 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 344a8c2e106a0a4e098e91a52e0af063
+      Hash: 7abdf6195e530455923d81f2f009ab0f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
@@ -735,7 +753,7 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_A
   - hash:
       serializedVersion: 2
-      Hash: c1933cc0a2f4ff6eb13333347497beb3
+      Hash: c822eec45bd7c5f6d7c8a2d82a6feb07
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
@@ -837,7 +855,7 @@ ScriptsOnlyBuild:
     className: TextMeshSpawner
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 220bd265f54cc4cee8f1539ad2b2c64a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DestroyNpc
@@ -897,7 +915,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: d791aa6007fa3640be1164ea75bb087d
+      Hash: 800c50acba124432abb4cf0d47202e06
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
@@ -927,7 +945,7 @@ ScriptsOnlyBuild:
     className: TextMeshProFloatingText
   - hash:
       serializedVersion: 2
-      Hash: 8cd1cbba27f3cb1717254f668e9e0d5a
+      Hash: 8f15c253902ff4eef507927669b9dc80
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
@@ -975,6 +993,12 @@ ScriptsOnlyBuild:
     className: MunculinNPC
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: skipnpc
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -999,7 +1023,7 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: 9726bc46e15d44429bd38fb013657f1e
+      Hash: 4e5a63ce0840833637ef5ccbddd1d963
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -1054,5 +1078,5 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
-  - Assets/Scenes/2.unity
-  playerPath: E:/codd/covido-game/gamebuild/v2/c2.apk
+  - Assets/Scenes/4.unity
+  playerPath: E:/codd/C++/covido-test/gamebuild/apk/co.apk
